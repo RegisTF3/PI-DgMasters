@@ -1,0 +1,283 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #a0422e;
+}
+.log {
+    height: 40px;
+    margin-right: 10px;
+}
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+    background-color: #343a40; /* Cor de fundo do cabeçalho */
+}
+
+.navbar {
+    background-color: #A63232;
+    position: relative;
+    z-index: 1001;
+}
+
+.navbar-brand, .nav-link, .navbar-toggler-icon {
+    color: #D99F59 !important;
+}
+
+.navbar-toggler {
+    border-color: #D99F59;
+}
+
+/* Teste Section */
+.teste {
+    background-color: black;
+    color: #D99F59;
+    height: 50px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.testea {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center !important;
+    padding: 0;
+}
+
+.lidown {
+    margin: 0 20px;
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.lidown::before,
+.lidown::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #D99F59;
+    top: 50%;
+    transition: width 0.3s;
+}
+
+.lidown::before {
+    left: -30px;
+}
+
+.lidown::after {
+    right: -30px;
+}
+
+.lidown:hover::before,
+.lidown:hover::after {
+    width: 30px;
+}
+.container-image-h{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0;
+    margin-top: 0;
+    
+    }
+    .cabeca{
+        height: 120px;
+         width: 100px;
+    }
+    .esquerd{
+        margin-right: 42%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      
+        margin-left: 500px;
+    }
+    .game{
+        padding-left: 15px;
+    }
+   .buscas{
+    
+    width: 30%;
+    margin-left: 500px;
+   }
+        
+   .usu{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-left: 100px;
+   }
+
+    
+header{
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+ background: #a0422e;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ color:  #79d3ee;
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+    }
+h1{
+    font-size: 45px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+    
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    
+
+}
+.form-container {
+    margin-top: 60%;
+    background-color: #A63232; /* Mesma cor de fundo do header */
+    color: #79d3ee; /* Mesma cor de texto do header */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilos para os campos do formulário */
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+    background-color: #79d3ee; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #66aacc; /* Cor de fundo do botão ao passar o mouse */
+}
+.carrinho{
+    background-color:#a0422e;
+    color: #79d3ee; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto; 
+    
+}
+
+.button {
+    background-color: #79d3ee; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.button:hover {
+    background-color: #66aacc; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.table-container {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilo para o h2 */
+h2 {
+    margin-bottom: 20px; /* Espaço entre o h2 e a tabela */
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    
+}
+
+th {
+    background-color: #a0422e; /* Cor de fundo do cabeçalho da tabela */
+    color: #79d3ee; /* Cor do texto do cabeçalho da tabela */
+}
+
+tr:nth-child(even) {
+    background-color: #a0422e; /* Cor de fundo das linhas pares */
+}
+
+tr:hover {
+    background-color: #a0422e; /* Cor de fundo das linhas ao passar o mouse */
+}
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000; /* Garante que o rodapé esteja acima de outros elementos */
+    background-color: #343a40; /* Cor de fundo do rodapé */
+}
+
+.footer-navbar {
+    background-color: #A63232;
+    position: relative;
+    z-index: 1001;
+}
+
+.footer-brand, .footer-link, .footer-toggler-icon {
+    color: #D99F59 !important;
+}
+
+.footer-toggler {
+    border-color: #D99F59;
+}
+
+
+
+
+
+
+

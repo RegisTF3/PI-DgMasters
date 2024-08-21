@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="gshop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>DungeonMasters</title>
+</head>
+<body style="background-color: #8C5535;">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a href="Home.html">
+                <img src="./Imagens/Logo.png" class="log" alt="DragonsClub Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="form-inline my-2 my-lg-0 mr-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div id="navbarDiv" class="navbar-collapse collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary" href="ClienteCadastro.html"><i class="fas fa-user"></i> Usuario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary" href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="teste">
+                <ul class="testea">
+                    <li class="lidown">Miniaturas</li>
+                    <li class="lidown">Torre de Dados</li>
+                    <li class="lidown">Mapas/Grids</li>
+                    <li class="lidown">Dados</li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+    
+   <div class="form-container">
+    <div class="form-container">
+        <form action="../controller/processaCliente.php" method="post" class="formu" id="formIncluirCliente">
+            <label for="nome">Nome do Cliente:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+
+            <label for="cpf">CPF:</label><br>
+            <input type="number" id="cpf" name="cpf"><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="text"  id="email" name="email">
+            <br>
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade"><br>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco"  name="endereco"><br>
+
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha" name="senha"><br>
+             <input type="hidden" name="op" value="Incluir"/>
+            <input type="submit" value="Incluir">
+        </form>
+
+        <form action="../controller/processaCliente.php" method="post" class="formu" id="formAlterarCliente" style="display:none;">
+            <label for="id">ID do Cliente:</label><br>
+            <input type="text" id="id" name="id"><br>
+
+            <label for="nome">Nome do Cliente:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+
+            <label for="cpf">CPF:</label><br>
+            <input type="number" id="cpf" name="cpf"><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="text"  id="email" name="email">
+            <br>
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade"><br>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco"  name="endereco"><br>
+
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha" name="senha"><br>
+             <input type="hidden" name="op" value="Alterar"/>
+            <input type="submit" value="Alterar">
+        </form>
+
+        <form action="../controller/processaCliente.php" method="post" class="formu" id="formExcluirCliente" style="display:none;">
+            <label for="id">ID do Cliente:</label><br>
+            <input type="text" id="id" name="id"><br> <!-- Campo de ID -->
+        
+            <input type="hidden" name="op" value="Excluir">
+            <input type="submit" value="Excluir">
+        </form>
+
+        <button class="button" onclick="mostrarForm('formIncluirCliente')">Incluir Cliente</button>
+        
+        <button class="button" onclick="window.location.href = 'Listar.php';">Ver Tabela de Clientes</button>
+    </div>
+</div>
+<script>
+    function mostrarForm(idForm) {
+        var forms = document.getElementsByClassName('formu');
+        for (var i = 0; i < forms.length; i++) {
+            forms[i].style.display = 'none';
+        }
+        document.getElementById(idForm).style.display = 'block';
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+ let lastScrollTop = 0;
+
+window.addEventListener("scroll", function(){
+let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+if (scrollTop > lastScrollTop){
+    // Scroll down
+    document.querySelector('.teste').style.transform = 'translateY(-100%)'; // Esconde .teste ao rolar para baixo
+} else {
+    // Scroll up
+    document.querySelector('.teste').style.transform = 'translateY(0)'; // Mostra .teste ao rolar para cima
+}
+lastScrollTop = scrollTop;
+});
+window.addEventListener('scroll', function() {
+var footer = document.querySelector('footer');
+if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    footer.style.display = 'block';
+} else {
+    footer.style.display = 'none';
+}
+});
+</script>
+<footer>
+    <nav class="footer-navbar">
+        <a class="footer-brand" href="#">Brand</a>
+        <div class="footer-links">
+            <a class="footer-link" href="#">Link 1</a>
+            <a class="footer-link" href="#">Link 2</a>
+            <a class="footer-link" href="#">Link 3</a>
+        </div>
+        <button class="footer-toggler" type="button">
+            <span class="footer-toggler-icon">☰</span>
+        </button>
+    </nav>
+</footer>   
+</body>
+</html>

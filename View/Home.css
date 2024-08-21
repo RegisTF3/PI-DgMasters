@@ -1,0 +1,170 @@
+
+html {
+    height: 100%;
+    background-image: url(./Imagens/Fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column nowrap;
+    align-items: center;
+    justify-content: center;
+    
+    overflow-y: auto; 
+}
+.container-image-h{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0;
+    margin-top: 0;
+    
+    }
+    .cabeca{
+        height: 120px;
+         width: 100px;
+    }
+    .esquerd{
+        margin-right: 42%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      
+        margin-left: 500px;
+    }
+    .game{
+        padding-left: 15px;
+    }
+   .buscas{
+    
+    width: 30%;
+    margin-left: 500px;
+   }
+        
+   .usu{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-left: 100px;
+   }
+
+    
+    header{
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+ background: #a0422e;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ color:  #79d3ee;
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ height: 150px;
+    }
+h1{
+    font-size: 45px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+}
+li{
+    font-size: 20px;
+    list-style: none;
+
+}
+
+/*footer {
+    background-color: #a0422e;
+    color: #79d3ee;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}*/
+.princi{
+    
+    color: #79d3ee;
+    height: 100vh;
+    width: 60%;
+    background-size: cover ;
+    margin-top: 30%;
+    overflow-y: auto; 
+
+}
+.button {
+    background-color: #79d3ee; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.button:hover {
+    background-color: #66aacc; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.space{
+    height: 150px;
+}
+/*.conso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.game{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    
+}
+
+.image-box {
+    border: 1px solid #ccc; /* Adiciona borda */
+    margin-bottom: 20px; /* Espaçamento inferior entre as imagens */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #a0422e
+}
+
+.image-box img {
+    max-width: 150px; /* Largura máxima da imagem */
+    height: auto; /* Altura automática */
+    margin-right:50px ;
+    margin-left: 50px;
+}
+.pop{
+    display: flex;
+    flex-direction: column;
+}
+.prod{
+    height: 200px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+h2{
+    font-size: 40px;
+}

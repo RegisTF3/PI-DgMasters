@@ -1,0 +1,122 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Imagens/Fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-image-h{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 0;
+    margin-top: 0;
+    
+    }
+    .cabeca{
+        height: 120px;
+         width: 100px;
+    }
+    .esquerd{
+        margin-right: 42%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      
+        margin-left: 500px;
+    }
+    .game{
+        padding-left: 15px;
+    }
+   .buscas{
+    
+    width: 30%;
+    margin-left: 500px;
+   }
+        
+   .usu{
+   
+    width: 20%;
+    margin-left: 100px;
+   }
+
+    
+    header{
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+ background: #a0422e;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ color:  #79d3ee;
+ display: flex;
+ flex-flow: column nowrap;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+    }
+h1{
+    font-size: 45px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+}
+li{
+    font-size: 20px;
+
+}
+.form-container {
+    background-color: #a0422e; /* Mesma cor de fundo do header */
+    color: #79d3ee; /* Mesma cor de texto do header */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilos para os campos do formulário */
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+    background-color: #79d3ee; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #66aacc; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.carrinho{
+    background-color:#a0422e;
+    color: #79d3ee; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto; 
+    
+}

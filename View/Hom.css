@@ -1,0 +1,431 @@
+/* Body */
+body {
+    background-color: #8C5535;
+    color: #BFB6AE;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+    background-color: #343a40; /* Cor de fundo do cabeçalho */
+}
+
+.navbar {
+    background-color: #A63232;
+    position: relative;
+    z-index: 1001;
+}
+
+.navbar-brand, .nav-link, .navbar-toggler-icon {
+    color: #D99F59 !important;
+}
+
+.navbar-toggler {
+    border-color: #D99F59;
+}
+
+/* Teste Section */
+.teste {
+    background-color: black;
+    color: #D99F59;
+    height: 50px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.testea {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center !important;
+    padding: 0;
+}
+
+.lidown {
+    margin: 0 20px;
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.lidown::before,
+.lidown::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #D99F59;
+    top: 50%;
+    transition: width 0.3s;
+}
+
+.lidown::before {
+    left: -30px;
+}
+
+.lidown::after {
+    right: -30px;
+}
+
+.lidown:hover::before,
+.lidown:hover::after {
+    width: 30px;
+}
+
+/* Carousel */
+.carousel {
+    margin-top: 8%;
+}
+
+.carousel-inner {
+    height: auto;
+    padding: 20px 0;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D99F59;
+}
+
+.carousel-inner img {
+    width: 1024px;
+    height: 600px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.carousel .card {
+    width: 22%; /* Ajusta a largura dos cards */
+    margin: 5px; /* Espaço entre os cards */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #A63232;
+}
+
+/* Products Section */
+.produtos {
+    padding: 40px 0;
+    background-color: #8C5535;
+    
+}
+.products-section{
+    padding: 40px 0;
+    background-color: #8C5535;
+   
+
+}
+
+.produtos .card {
+    border: none;
+    background-color: #D99F59;
+    color: #BFB6AE;
+    margin: 20px 0; /* Espaço entre os cards */
+}
+
+.produtos .card-title {
+    color: #D93D3D;
+}
+.card-title {
+    color: #D93D3D;
+}
+
+.produtos .btn-primary {
+    background-color: #D93D3D;
+    border-color: #D93D3D;
+}
+
+.btn-primary {
+    background-color: #D93D3D;
+    border-color: #D93D3D;
+}
+.produtos .btn-primary:hover {
+    background-color: #A63232;
+    border-color: #A63232;
+}
+/* Estilos para a área de cards */
+.card-area {
+    background-color: #D99F59; /* Cor de fundo semelhante */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os cards */
+.card {
+    margin: 10px;
+    border: 1px solid #D93D3D;
+    border-radius: 8px;
+    background-color: #D99F59;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Permitir que o card se ajuste ao conteúdo */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Altura consistente, mas ajustável */
+    object-fit: contain; /* Mostra a imagem inteira sem distorção */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #D99F59;
+}
+/* Estilos para os botões */
+.btn-outline-light {
+    border-color: #D99F59;
+    color: #D99F59;
+}
+
+.btn-outline-light:hover {
+    background-color: #D99F59;
+    color: #8C5535;
+}
+
+.btn-primary {
+    background-color: #D93D3D;
+    border-color: #D93D3D;
+    color: white; /* Ajustar cor do texto */
+}
+
+.btn-primary:hover {
+    background-color: #A63232; /* Cor mais escura no hover */
+    border-color: #A63232;
+}
+/* Estilo adicional para o botão de login */
+.nav-item .btn-primary {
+    background-color: #D93D3D;
+    border-color: #D93D3D;
+    color: white; /* Cor do texto */
+    margin: 5px;
+    padding: 10px 20px; /* Tamanho do botão */
+}
+
+.nav-item .btn-primary:hover {
+    background-color: #A63232; /* Cor mais escura no hover */
+    border-color: #A63232;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000; /* Garante que o rodapé esteja acima de outros elementos */
+    background-color: #343a40; /* Cor de fundo do rodapé */
+}
+
+.footer-navbar {
+    background-color: #A63232;
+    position: relative;
+    z-index: 1001;
+}
+
+.footer-brand, .footer-link, .footer-toggler-icon {
+    color: #D99F59 !important;
+}
+
+.footer-toggler {
+    border-color: #D99F59;
+}
+/* Logo */
+.log {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Map */
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 560px;
+    width: 100%;
+    margin: auto;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 560px;
+    width: 100%;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #D99F59;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    color: #ffffff;
+}
+
+/* Extras Section */
+.extras {
+    margin-top: 50px;
+}
+
+.extras img {
+    border-radius: 8px;
+}
+
+.extras p {
+    margin-top: 10px;
+    color: #D99F59;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .carousel-inner img {
+        max-width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .mapouter, .gmap_canvas {
+        height: 500px;
+    }
+
+    .carousel .card {
+        flex: 1 1 22%; /* Largura padrão */
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-inline {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-inline .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-inline .btn {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-inner img {
+        max-height: 300px;
+    }
+
+    .mapouter, .gmap_canvas {
+        height: 400px;
+    }
+
+    .extras .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .carousel .card {
+        flex: 1 1 45%; /* Largura para telas menores */
+        margin: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .log {
+        height: 30px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .carousel-inner img {
+        max-height: 200px;
+    }
+
+    .mapouter, .gmap_canvas {
+        height: 300px;
+    }
+
+    .extras .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .carousel .card {
+        flex: 1 1 90%; /* Largura para telas ainda menores */
+        margin: 10px;
+    }
+}
+
+/* Grid container for cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Ensuring cards have a consistent margin and display */
+.carousel .card {
+    flex: 1 1 22%; /* Default width */
+    margin: 10px;
+}
+
+/*teste para form*/
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10%;
+    width: 30%;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    margin-bottom: 20px;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
